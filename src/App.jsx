@@ -5,7 +5,7 @@ import { NotFound } from './routes/NotFound'
 import { Todos } from './routes/Todos'
 
 function App() {
-
+// Whats Left is the pagination
     return (
         <main>
             <Routes>
