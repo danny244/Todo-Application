@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --padding: 0.8rem;
+  --bg-color: #242424;
+  --contents-bg-color: #242424;
+  --border-color: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer base {
+
+    body {
+        @apply bg-slate-900
+    }
+
+  .-border {
+    @apply border border-transparent;
+  }
+
+  .-bg-color {
+    @apply bg-slate-900
+  }
+  
+}
+
+
+/* ::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+    display: none;
+
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 6px;
+    display: none;
+
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #999 transparent;
+  }
+   */
+
+
+body {
+  /* background-color: var(--bg-color); */
+  color: #fff;
+
+  padding: var(--padding);
+
+  height: 100vh;
+  width: 100vw;
+
+  font-size: 0.8rem;
+
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+.w-h-inherit {
+  width: calc(100vw - var(--padding));
+  height: calc(100vh - var(--padding));
+}
