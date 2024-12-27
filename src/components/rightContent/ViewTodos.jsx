@@ -164,7 +164,7 @@ export function ViewTodos({ todo, toggleCompleted, updateTodo, deleteTask, setUp
                                 key={id}
                                 className={`text-ellipsis  group w-full p-[0.7rem] flex items-center gap-x-2 justify-between transition-all duration-700 ${completed ? 'line-through bg-slate-800' : '-bg-color'}`}
                             >
-                                <Link to={`/home/${id}`} className="cursor-pointer w-full">{task}{!task.includes('.') && '.'}</Link>
+                                <Link to={`//${id}`} className="cursor-pointer w-full">{task}{!task.includes('.') && '.'}</Link>
 
                                 <div className="flex gap-x-3 ml-4">
                                     <button onClick={() => toggleCompleted(id)}>

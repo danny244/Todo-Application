@@ -19,7 +19,7 @@ export function CreateTodo({ addTodo }) {
     return <section className='flex justify-center items-center h-full w-full'>
 
         <form onSubmit={handleTodoSubmit} className='w-full h-fit flex flex-col gap-y-4 items-center justify-center'>
-            <Header click={() => navigate('/home')} title='Create Todo' className='text-[1.2rem] cursor-pointer font-semibold text-center mr-auto' />
+            <Header click={() => navigate('/')} title='Create Todo' className='text-[1.2rem] cursor-pointer font-semibold text-center mr-auto' />
 
             <div className="flex items-center w-full">
                 <input

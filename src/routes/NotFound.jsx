@@ -7,7 +7,7 @@ export function NotFound() {
                 <h1 className="font-bold text-[6rem] ">404</h1>
                 Page Not Found
 
-                <Link to={'/home'} className="py-1 px-8 w-fit bg-slate-950 mt-3 ">
+                <Link to={'/'} className="py-1 px-8 w-fit bg-slate-950 mt-3 ">
                     Back To Home
                 </Link>
             </div>
